@@ -1,0 +1,19 @@
+<form (submit)="submitProduct">
+  <div>
+    <label for="name">Name: </label>
+    <input type="text" name="name" [(ngModel)]="product.name">
+  </div>
+  <div>
+    <label for="description">Description: </label>
+    <input type="text" name="description" [(ngModel)]="product.description">
+  </div>
+  <div>
+    <label for="price">Price: </label>
+    <input type="text" name="price" [(ngModel)]="product.price">
+  </div>
+  <div>
+    <label for="imageURL">Image Url: </label>
+    <input type="text" name="imageURL" [(ngModel)]="product.imageURL">
+  </div>
+  <button class="btn bg-green-400">Submit</button>
+</form>
