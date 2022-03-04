@@ -1,19 +1,22 @@
-<form (submit)="submitProduct">
-  <div>
-    <label for="name">Name: </label>
-    <input type="text" name="name" [(ngModel)]="product.name">
+<form (submit)="submitProduct()" class="bg-pink-300 w-2/4 mt-5 rounded p-5 text-center my-0 mx-auto">
+  <div class="flex flex-col gap-2">
+    <h1 class="text-center font-bold">ADD A PRODUCT</h1>
+    <div class="border border-black p-3">
+      <label for=" name">Name: </label>
+      <input type="text" name="name" [(ngModel)]="product.name" class="p-1">
+    </div>
+    <div class="border border-black p-3">
+      <label for="description">Description: </label>
+      <input type="text" name="description" [(ngModel)]="product.description" class="p-1">
+    </div>
+    <div class="border border-black p-3">
+      <label for="price">Price: </label>
+      <input type="text" name="price" [(ngModel)]="product.price" class="p-1">
+    </div>
+    <div class="border border-black p-3">
+      <label for="imageURL">Image Url: </label>
+      <input type="text" name="imageURL" [(ngModel)]="product.imageURL" class="p-1">
+    </div>
+    <button class="btn bg-green-400 p-1 rounded text-white">Submit</button>
   </div>
-  <div>
-    <label for="description">Description: </label>
-    <input type="text" name="description" [(ngModel)]="product.description">
-  </div>
-  <div>
-    <label for="price">Price: </label>
-    <input type="text" name="price" [(ngModel)]="product.price">
-  </div>
-  <div>
-    <label for="imageURL">Image Url: </label>
-    <input type="text" name="imageURL" [(ngModel)]="product.imageURL">
-  </div>
-  <button class="btn bg-green-400">Submit</button>
 </form>
