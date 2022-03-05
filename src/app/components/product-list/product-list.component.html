@@ -1,8 +1,17 @@
-<div *ngFor="let product of products | keyvalue">
+<div *ngFor="let product of products">
   <div>
     <ul>
       <li>
-        {{product.key}}: {{product.value}}
+        {{product._id}}
+      </li>
+      <li>
+        {{product.name}}
+      </li>
+      <li>
+        {{product.description}}
+      </li>
+      <li>
+        {{product.price}}
       </li>
     </ul>
   </div>

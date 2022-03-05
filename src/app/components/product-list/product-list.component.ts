@@ -18,13 +18,8 @@ export class ProductListComponent implements OnInit {
 
   getProducts() {
     // si afegigx error com a segon callback m ix deprecated
-    this.productservice.getProducts().subscribe({
-      next: (res) => {
-        console.log(res);
-
-        this.products = res;
-        console.log(this.products);
-      },
+    this.productservice.getProducts().subscribe((res) => {
+      console.log(res);
     });
   }
 }
